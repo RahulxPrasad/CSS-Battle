@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: raleway;
+}
+:root {
+  --gray: #828383;
+  --light-gray: #f6f6f6;
+  --white: #ffffff;
+}
+.container {
+  height: 100vh;
+  padding: 1.5rem 2.5em;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+#DC {
+  color: blue;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0 0.3rem;
+}
+#searchbar {
+  border-radius: 5rem;
+  border: 1px solid var(--gray);
+  width: 22rem;
+  padding: 0.7rem 1rem;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.links a {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: var(--gray);
+  text-decoration: none;
+  &:hover {
+    background-color: var(--light-gray);
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+  height: 15rem;
+  background: linear-gradient(to right, rgb(131, 109, 255), rgb(75, 147, 255));;
+  width: 21rem;
+  border-radius: 1rem;
+}
+.card img {
+    height: 15rem;
+    width: 12.5rem;
+  }
+  .names
+  {
+    text-align: right;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+  }
+  .character-name
+  {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray);
+  color: var(--gray);
+  padding-top: 1rem;
+}
+.socials {
+  display: flex;
+}
+.social {
+  padding: 1rem;
+  cursor: pointer;
+
+  color: var(--gray);
+  text-decoration: none;
+  &:hover {
+  text-decoration: underline;
+  }
+}
+.prev {
+  cursor: pointer;
+  padding: 1rem;
+  &:hover {
+    background-color: var(--light-gray);
+  }
+}
+.next {
+  cursor: pointer;
+  padding: 1rem;
+  &:hover {
+    background-color: var(--light-gray);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
