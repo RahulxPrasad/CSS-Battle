@@ -27,6 +27,7 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 #DC {
   color: blue;
@@ -61,15 +62,16 @@
 }
 .card {
     display: flex;
+
     justify-content: space-around;
-  height: 15rem;
+  height: 14rem;
   background: linear-gradient(to right, rgb(131, 109, 255), rgb(75, 147, 255));;
-  width: 21rem;
+  width: 21.5rem;
   border-radius: 1rem;
 }
 .card img {
-    height: 15rem;
-    width: 12.5rem;
+    height: 14rem;
+    width: 12rem;
   }
   .names
   {
@@ -91,20 +93,25 @@ footer {
   color: var(--gray);
   padding-top: 1rem;
 }
+footer a
+{
+  
+  color: var(--gray);
+  text-decoration: none;
+}
 .socials {
   display: flex;
 }
 .social {
   padding: 1rem;
   cursor: pointer;
-
-  color: var(--gray);
-  text-decoration: none;
   &:hover {
   text-decoration: underline;
   }
 }
 .prev {
+  width: 6rem;
+  text-align: center;
   cursor: pointer;
   padding: 1rem;
   &:hover {
@@ -112,15 +119,39 @@ footer {
   }
 }
 .next {
+  width: 6rem;
+  text-align: center;
   cursor: pointer;
+
   padding: 1rem;
   &:hover {
     background-color: var(--light-gray);
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 650px) {
+
   .navbar {
     flex-direction: column;
   }
+  .links a
+  {
+padding: 0.5rem;
+  }
+ .card-container 
+ {
+  flex-direction: column;
+ }
+ .card
+ {
+  width: 90vw;
+ }
+ .card
+ {
+  margin: 1rem 0;
+ }
+ .socials
+ {
+  flex-direction: column;
+ }
 }
